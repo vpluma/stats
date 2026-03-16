@@ -1,1 +1,1 @@
-# Sports Stats App in JavaScript
+## Sports Stats App in JavaScript
