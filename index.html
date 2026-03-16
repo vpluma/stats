@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soccer Stats Tracker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1>⚽ Soccer Stats Tracker</h1>
+
+  <div class="teams">
+
+    <!-- HOME TEAM -->
+    <div class="team home">
+      <h2>🏠 Home</h2>
+
+      <div class="stat-row">
+        <span class="stat-label">Goals</span>
+        <button class="minus" onclick="change('homeGoals', -1)">−</button>
+        <span class="stat-count" id="homeGoals">0</span>
+        <button class="plus"  onclick="change('homeGoals',  1)">+</button>
+      </div> <!-- end of stat-row -->
+
+      <div class="stat-row">
+        <span class="stat-label">Assists</span>
+        <button class="minus" onclick="change('homeAssists', -1)">−</button>
+        <span class="stat-count" id="homeAssists">0</span>
+        <button class="plus"  onclick="change('homeAssists',  1)">+</button>
+      </div> <!-- end of stat-row -->
+    </div> <!-- end of team home -->
+
+    <!-- AWAY TEAM -->
+    <div class="team away">
+      <h2>✈️ Away</h2>
+
+      <div class="stat-row">
+        <span class="stat-label">Goals</span>
+        <button class="minus" onclick="change('awayGoals', -1)">−</button>
+        <span class="stat-count" id="awayGoals">0</span>
+        <button class="plus"  onclick="change('awayGoals',  1)">+</button>
+      </div> <!-- end of stat-row -->
+
+      <div class="stat-row">
+        <span class="stat-label">Assists</span>
+        <button class="minus" onclick="change('awayAssists', -1)">−</button>
+        <span class="stat-count" id="awayAssists">0</span>
+        <button class="plus"  onclick="change('awayAssists',  1)">+</button>
+      </div> <!-- end of stat-row -->
+    </div> <!-- end of team away -->
+
+  </div> <!-- end of teams -->
+
+  <script src="app.js"></script>
+
+</body>
+</html>
